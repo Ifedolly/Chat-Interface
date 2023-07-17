@@ -1,0 +1,224 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    overflow: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body img{
+    height: 50px;
+    border-radius: 50%;
+}
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    min-height: 100vh;
+    overflow: none;
+}
+.container-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    min-height: 100vh;
+    width: 30%;
+}
+.header1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: .5em;
+    gap: 15em;
+    background-color: rgb(247, 239, 239);
+
+}
+.top-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5em;
+    justify-content: flex-end;
+}
+.main1{
+    width: 100%;
+
+}
+.search-box{
+    background-color: rgb(233, 220, 220);
+    padding: .5rem;
+}
+.searchbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    gap: 1em;
+    background-color: white;
+    padding: .7rem;
+    border-radius: 3rem;
+    color: black;
+}
+.input1{
+    margin: 0 0.6rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: black;
+    font-weight: 300;
+    font-size: 14px;
+}
+.chat-messages{
+    display: block;
+    gap: 1em;
+    overflow-y: scroll;
+    height: 600px;
+}
+.chat-1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    border-bottom:1px solid rgb(161, 148, 148);
+    padding: .5rem 1rem;
+    justify-content: space-between; 
+}
+.top-left1{
+    display: flex;
+    flex-direction: row;
+    gap: .5em;
+    align-items: center;
+}
+.chat-1:nth-child(2){
+    background-color: rgba(192, 191, 191, 0.849);
+}
+.chat-1 span p:first-child{
+    font-size: 17px;
+    font-weight: 400;
+    color: rgb(71, 69, 69);
+}
+.chat-1 span p:last-child{
+    font-weight: 400;
+    color: rgb(151, 146, 146);
+}
+.chat-1 span:last-child{
+    font-weight: 500;
+    color: rgb(71, 69, 69);
+    align-self: flex-end;
+}
+/* .chat-1:nth-child(2){
+    background-color: rgb(204, 197, 197);
+} */
+.container-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+    /* min-height: 100vh; */
+    width: 70%;       
+}
+.header2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: .5em 1em;
+    justify-content: space-between;
+    height: 11vh;
+}
+.top-left2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+.top-right2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5em;
+}
+ .main2{
+    background-color: beige;
+    
+}
+.text-box{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.left-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1em;
+    padding: 1em;
+}
+.right-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 1em;
+    padding: 1em;
+}
+.left-text button{
+    width: fit-content;
+    height: 2em;
+    color: black;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: .4em;
+    text-align: center;
+}
+.right-text button{
+    width: fit-content;
+    height: 2em;
+    color: black;
+    background-color: rgb(196, 236, 163);
+    border: 2px solid rgb(196, 236, 163);
+    border-radius: .4em;
+    text-align: center;
+}
+.last-box{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(224, 219, 219);
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+    padding: .6rem 1.7rem;
+    color: black;
+}
+.emoji{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+.input2{
+    border: none;
+    outline: none;
+    background-color: white;
+    width: 700px;
+    height: 40px;
+    border-radius: 2em;
+    padding: 1em;
+}
+@media screen and (max-width: 425px) {
+    .container-2{
+        display: none;
+    }
+    .container-1{
+        width: 100%;
+    }
+    .main1{
+        width: 100%;
+    }
+    .chat-1:nth-child(2){
+        /* background-color: white; */
+    }
+}
